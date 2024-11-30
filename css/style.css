@@ -55,6 +55,8 @@ body {
 img {
     vertical-align: bottom;
     inline-size: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
 }
 
 h2,
@@ -86,6 +88,7 @@ li span {
 hr {
     inline-size: 100%;
     background: var(--stone150);
+    margin: 0;
 }
 
 /* estilos */
@@ -111,6 +114,7 @@ hr {
 
 .recipe_preparation {
     padding: 1.5rem;
+    background: var(--rose50);
 }
 
 .recipe_titlePreparation {
@@ -123,6 +127,17 @@ hr {
 
 .recipeItemPreparation::marker {
     color: var(--rose800);
+}
+
+.recipeItemIngredients::marker {
+    color: var(--brown800);
+}
+
+.recipeItemInstructions::marker {
+    color: var(--brown800);
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: var(--fontSecundary);
 }
 
 .recipe_subTitle {
@@ -163,4 +178,39 @@ hr {
 .table_value {
     font-weight: 700;
     color: var(--brown800);
+}
+
+/* media queries */
+@media (width > 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        padding-block: 8rem;
+    }
+
+    .recipe {
+        padding: 2.5rem;
+        box-sizing: border-box;
+        border-radius: 1.5rem;
+    }
+
+    .recipe_img {
+        border-radius: .75rem;
+        overflow: hidden;
+    }
+
+    img {
+        max-block-size: 18.75rem;
+    }
+
+    .recipe_body {
+        padding: 0;
+        margin-block-start: 2.5rem;
+    }
+}
+
+@media (width > 1200px) {
+    .recipe {
+        max-inline-size: 46rem;
+    }
 }
