@@ -88,3 +88,79 @@ hr {
     background: var(--stone150);
 }
 
+/* estilos */
+
+.recipe {
+    background: var(--white);
+    max-inline-size: 38.5rem;
+}
+
+.recipe_body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 2rem;
+}
+
+.recipe_title{
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--stone900);
+    margin-block-end: 1.5rem;
+}
+
+.recipe_preparation {
+    padding: 1.5rem;
+}
+
+.recipe_titlePreparation {
+    color: var(--rose800);
+    font-weight: 600;
+    line-height: 100%;
+    font-size: 1.25rem;
+    margin-block-end: 1rem;
+}
+
+.recipeItemPreparation::marker {
+    color: var(--rose800);
+}
+
+.recipe_subTitle {
+    color: var(--brown800);
+    font-size: 1.75rem;
+    margin-block-end: 1.5rem;
+}
+
+.table {
+    inline-size: 100%;
+    margin-block-start: 1.5rem;
+}
+
+.table tr {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-inline: 2rem;
+    padding-block: .75rem;
+    border-block-end: 1px solid var(--stone150);
+}
+
+.table tr:first-child {
+    padding-block-start: 0;
+}
+
+.table tr:last-child {
+    padding-block-end: 0;
+    border: none;
+}
+
+
+.table td {
+    flex: 1;
+    padding: 0;
+}
+
+.table_value {
+    font-weight: 700;
+    color: var(--brown800);
+}
